@@ -11,6 +11,7 @@ import java.util.Scanner;
  **/
 public class Main {
     public static void main(String[] args) throws FizzBuzzException {
+        System.out.println("Enter string to be converted");
         Scanner scanner = new Scanner(System.in);
         String line = scanner.nextLine();
         if (line.length() < 6 || line.length() > 100) {
@@ -22,5 +23,7 @@ public class Main {
 
         FizzBuzzOutput result = FizzBuzzDetector.getOverlappings(line);
         System.out.println(result);
+
+        line = scanner.nextLine();
     }
 }
